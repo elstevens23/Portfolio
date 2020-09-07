@@ -1,6 +1,5 @@
 * {
 	box-sizing: border-box;
-	font-family: "DIN Next LT", sans-serif;
 }
 
 body {
@@ -8,9 +7,10 @@ body {
 	margin: 0;
 }	
 
-title {
-	
-}
+/*@font-face {
+	font-family: "DIN Next LT";
+	src: url(DINNextLTPro-Regular.woff);
+}*/
 
 .navBar {
 	display: flex;
@@ -71,8 +71,6 @@ header {
 .about-Me {
 	background-color: #9fdee0;
 	height: 450px;
-	padding-left: 15px;
-	padding-right: 15px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -87,8 +85,6 @@ header {
 .websites {
 	background-color: #fafcae;
 	height: 450px;
-	padding-left: 15px;
-	padding-right: 15px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -103,8 +99,6 @@ header {
 .contact-Me {
 	background-color: #fbc4ee;
 	height: 450px;
-	padding-left: 15px;
-	padding-right: 15px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -114,4 +108,18 @@ header {
 	font-size: 50px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.before-footer {
+	display: flex;
+	background-color: #FFFFFF;
+	height: 200px;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 20px;
+}
+
+footer {
+	background-color: ##e1e1e3;
+	height: 50px;
 }
