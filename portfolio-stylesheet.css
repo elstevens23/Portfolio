@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: "DIN Next LT", sans-serif;
 }
 
 body {
@@ -8,17 +9,21 @@ body {
 }	
 
 title {
-	font-family: 'DIN Next LT', sans-serif;
+	
 }
 
 .navBar {
 	display: flex;
 	background-color: #FFFFFF;
-	padding: 10px;
+	padding: 5px;
 	border-bottom: 1px solid #dbdbdd;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+	width: 100%;
 }
 
 nav {
@@ -34,6 +39,10 @@ nav a {
 	margin-left: 10px;
 }
 
+.navBar a:hover {
+	color: #5fd5ca;
+}
+
 h1 {
 	font-size: 30px;
 	width: 33.3%;
@@ -45,9 +54,64 @@ h1 {
 }
 
 header {
-	padding: 340px 0;
+	padding: 380px 0;
 	width: 100%;
 	background-image: url('header.jpg');
 	background-size: cover;
 	background-position: top;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.home h2 {
+	padding: 40px;
+	font-size: 60px;
+}
+
+.about-Me {
+	background-color: #9fdee0;
+	height: 450px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-Me h3 {
+	padding-left: 100px;
+	font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.websites {
+	background-color: #fafcae;
+	height: 450px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.websites h4 {
+	padding-left: 100px;
+	font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-Me {
+	background-color: #fbc4ee;
+	height: 450px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-Me h5 {
+	padding-left: 100px;
+	font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
