@@ -40,7 +40,12 @@ nav a {
 }
 
 .navBar a:hover {
-	color: #5fd5ca;
+	color: #e1e1e3;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
 }
 
 .pageTitle {
@@ -49,6 +54,8 @@ nav a {
 	text-align: center;
 	font-family: "DIN Next LT";
 	margin: 0;
+	text-decoration: none;
+	color: #000000;
 }
 
 .right {
@@ -56,7 +63,7 @@ nav a {
 }
 
 header {
-	padding: 380px 0;
+	padding: 360px 0;
 	width: 100%;
 	background-image: url('header.jpg');
 	background-size: cover;
@@ -71,14 +78,14 @@ header {
 	font-family: "DIN Next LT";
 }
 
-.about-Me {
-	background-color: #9fdee0;
+.about-me {
+	background-color: #cef2f2;
 	height: 450px;
 	display: flex;
+	justify-content: center;
 }
 
-.about-Me h3 {
-	padding-left: 100px;
+.about-me h3 {
 	font-size: 50px;
 	margin-left: auto;
 	margin-right: auto;
@@ -86,27 +93,25 @@ header {
 }
 
 .websites {
-	background-color: #fafcae;
+	background-color: #fafad4;
 	height: 450px;
 	display: flex;
 }
 
 .websites h4 {
-	padding-left: 100px;
 	font-size: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: "DIN Next LT";
 }
 
-.contact-Me {
-	background-color: #fbc4ee;
+.contact-me {
+	background-color: #f4daf5;
 	height: 450px;
 	display: flex;
 }
 
-.contact-Me h5 {
-	padding-left: 100px;
+.contact-me h5 {
 	font-size: 50px;
 	margin-left: auto;
 	margin-right: auto;
@@ -116,10 +121,17 @@ header {
 .before-footer {
 	display: flex;
 	background-color: #FFFFFF;
-	height: 200px;
-	align-items: flex-end;
-	justify-content: center;
-	padding: 20px;
+	height: 170px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.before-footer h6 {
+	font-family: "DIN Next LT";
+	font-size: 15px;
+	font-weight: normal;
+	padding-top: 35px;
+	margin: 0;
 }
 
 footer {
@@ -128,5 +140,59 @@ footer {
 	height: 50px;
 	font-family: "DIN Next LT";
 	justify-content: center;
-	padding-top: 22.5px;
+	padding-top: 17px;
+}
+
+@media screen and (max-width: 500px) {
+  .navBar a {
+    display: block;
+  }
+  .pageTitle {
+	  display: block;
+  }
+  .home h2 {
+	  display: block;
+  }
+  .about-me {
+	  display: block;
+  }
+  .websites {
+	  display: block;
+  }
+  .contact-me {
+	  display: block;
+  }
+  .before-footer {
+	  display: block;
+  }
+  .footer {
+	  display: block;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .navBar a {
+    display: block;
+  }
+  .pageTitle {
+	  display: block;
+  }
+  .home h2 {
+	  display: block;
+  }
+  .about-me {
+	  display: block;
+  }
+  .websites {
+	  display: block;
+  }
+  .contact-me {
+	  display: block;
+  }
+  .before-footer {
+	  display: block;
+  }
+  .footer {
+	  display: block;
+  }
 }
