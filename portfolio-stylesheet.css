@@ -137,6 +137,75 @@ header {
 }
 
 /* ========================================================================
+	Home Page
+   ========================================================================
+*/
+
+.aboutme {
+	font-family: "DIN Next LT";
+	background-color: #f0f2f2;
+	width: 1920px;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.aboutme-header {
+	display: flex;
+	justify-content: center;
+}
+
+.aboutme-heading h1 {
+	font-size: 50px;
+	padding-left: 45px;
+}
+
+.top-aboutme img {
+	border-radius: 50%;
+	width: 40%;
+	margin: 0;
+}
+
+.top-aboutme {
+	/*padding: 15px;*/
+	display: flex;
+	flex-direction: row;
+	height: 400px;
+	width: 1000px;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.top-aboutme p {
+	font-size: 25px;
+	padding-left: 45px;
+}
+
+.middle-aboutme {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding-top: 150px;
+	align-items: center;
+	width: 100%;
+}
+
+.aboutheading-two h2 {
+	font-size: 50px;
+}
+
+.middle-aboutme .icons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	border: transparent;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* ========================================================================
 	'Portfolio' page
    ========================================================================
 */
@@ -247,17 +316,14 @@ textarea {
 	font-family: "DIN Next LT";
 	font-size: 15px;
 	font-weight: normal;
-	padding-top: 35px;
 	margin: 0;
 }
 
 footer {
-	display: flex;
 	background-color: #e1e1e3;
-	height: 50px;
 	font-family: "DIN Next LT";
-	justify-content: center;
-	padding-top: 17px;
+	text-align: center;
+	padding: 15px 0 15px 0;
 }
 
 /* =============================================
