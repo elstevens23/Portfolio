@@ -1,3 +1,8 @@
+/* =============================================
+	Universal for all pages
+   =============================================
+*/
+
 * {
 	box-sizing: border-box;
 }
@@ -61,6 +66,11 @@ a {
 .right {
 	width: 33.3%;
 }
+
+/* =============================================
+	Home page
+   =============================================
+*/
 
 header {
 	padding: 360px 0;
@@ -126,6 +136,56 @@ header {
 	align-items: center;
 }
 
+/* =============================================
+	About Me page
+   =============================================
+*/
+
+.projects-header {
+	font-family: "DIN Next LT";
+	display: flex;
+	justify-content: center;
+}
+
+.projects-header h1 {
+	font-size: 50px;
+}
+
+.webtable {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	border: 1px solid #e1e1e3;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.webtable > div {
+	border: 1px solid #e1e1e3;
+	padding: 1em;
+	color: #000000;
+	height: 250px;
+}
+
+.webtabletwo {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	border: 1px solid #e1e1e3;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.webtabletwo > div {
+	border: 1px solid #e1e1e3;
+	padding: 1em;
+	color: #000000;
+	height: 250px;
+}
+
+/* =============================================
+	Universal for all pages (bottom)
+   =============================================
+*/
+
 .before-footer h6 {
 	font-family: "DIN Next LT";
 	font-size: 15px;
@@ -142,6 +202,11 @@ footer {
 	justify-content: center;
 	padding-top: 17px;
 }
+
+/* =============================================
+	Media Queries
+   =============================================
+*/
 
 @media screen and (max-width: 500px) {
   .navBar a {
