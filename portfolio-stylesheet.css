@@ -198,12 +198,18 @@ header {
 
 .middle-aboutme .icons {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 30px;
+	grid-auto-flow: row;
 	justify-items: center;
 	border: transparent;
 	width: 100%;
 	margin: 0 auto;
-	font-size: 15px;
+	font-size: 25px;
+}
+
+.icons p {
+	text-align: left;
 }
 
 /* ========================================================================
