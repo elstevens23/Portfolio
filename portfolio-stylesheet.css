@@ -10,6 +10,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	font-size: 62.5%; /*This creates this conversion (1em = 10px)*/
 }	
 
 @font-face {
@@ -141,10 +142,9 @@ header {
    ========================================================================
 */
 
-.aboutme {
+.aboutmepage {
 	font-family: "DIN Next LT";
 	background-color: #f0f2f2;
-	width: 1920px;
 }
 
 .aboutme-header {
@@ -201,8 +201,8 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	font-size: 25px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .icons p {
@@ -217,6 +217,7 @@ header {
 .cv-details {
 	width: 400px;
 	padding-left: 50px;
+	padding-bottom: 50px;
 }
 
 /* ========================================================================
@@ -275,6 +276,51 @@ header {
    ========================================================================
 */
 
+.contact-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact-header h1 {
+	font-size: 50px;
+	font-family: "DIN Next LT";
+}
+
+.contact-image img {
+	width: auto;
+	height: 300px;
+}
+
+.top-contact-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.top-contact-container .contact-image {
+	padding-right: 30px;
+}
+
+.top-contact-container .contact-intro-text {
+	padding-left: 30px;
+	font-family: "DIN Next LT";
+	font-size: 20px;
+}
+
+.secondcontact-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.secondcontact-header h2 {
+	font-size: 35px;
+	font-family: "DIN Next LT";
+}
+
 body { background: #FFFFFF; }
 form { max-width:420px; margin:50px auto; }
 
@@ -326,6 +372,12 @@ textarea {
    ========================================================================
 */
 
+.before-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .before-footer h6 {
 	font-family: "DIN Next LT";
 	font-size: 15px;
@@ -344,6 +396,28 @@ footer {
 	Media Queries
    =============================================
 */
+
+@media screen and (max-width: 1350px) {
+	.pageTitle {
+		font-size: 45px;
+	}
+}
+
+@media screen and (max-width: 1170px) {
+	.pageTitle {
+		font-size: 25px;
+	}
+	nav a {
+		font-size: 10px;
+		padding: 0 5px 0 5px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	nav a {
+		display: block;
+	}
+}
 
 @media screen and (max-width: 500px) {
   .navBar a {
