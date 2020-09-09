@@ -145,11 +145,6 @@ header {
 	font-family: "DIN Next LT";
 	background-color: #f0f2f2;
 	width: 1920px;
-	margin-left: 0 auto;
-	margin-right: 0 auto;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
 }
 
 .aboutme-header {
@@ -192,7 +187,7 @@ header {
 	width: 100%;
 }
 
-.aboutheading-two h2 {
+.aboutheading-two h1 {
 	font-size: 50px;
 }
 
@@ -206,10 +201,22 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .icons p {
 	text-align: left;
+}
+
+.aboutheading-three h1 {
+	font-size: 50px;
+	padding-left: 50px;
+}
+
+.cv-details {
+	width: 400px;
+	padding-left: 50px;
 }
 
 /* ========================================================================
