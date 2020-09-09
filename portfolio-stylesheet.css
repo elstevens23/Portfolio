@@ -159,8 +159,7 @@ header {
 
 .top-aboutme img {
 	border-radius: 50%;
-	width: 400px;
-	height: 400px;
+	max-width: 400px;
 	margin: 0;
 	object-fit: cover;
 }
@@ -170,7 +169,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	height: 400px;
-	width: 1000px;
+	max-width: 1000px;
 	margin: auto;
 	padding-top: 50px;
 }
@@ -265,46 +264,65 @@ header {
 	font-family: "DIN Next LT";
 	display: flex;
 	justify-content: center;
-	
 }
 
 .projects-header h1 {
 	font-size: 50px;
 }
 
-.webtable {
-	display: grid;
-	grid-template-columns: 300px 300px 300px;
-	border: 1px solid #e1e1e3;
-	width: 900px;
+.gallery-container {
+	font-family: "DIN Next LT";
+	max-width: 1920px;
 	margin: 0 auto;
-}
-
-.webtable > div { /*Need to fix this and replace it with a class*/
-	border: 1px solid #e1e1e3;
-	padding: 1em;
-	color: #000000;
-	height: 250px;
-}
-
-.webtabletwo {
 	display: grid;
-	grid-template-columns: 300px 300px 300px;
-	border: 1px solid #e1e1e3;
-	width: 900px;
-	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	grid-auto-flow: row;
+	justify-items: center;
 }
 
-.webtabletwo > div { /*Need to fix this and replace it with a class*/
-	border: 1px solid #e1e1e3;
-	padding: 1em;
-	color: #000000;
-	height: 250px;
+.gallery-item {
+	margin: 10px;
+	text-decoration: none;
+	position: relative;
+}
+
+.gallery-item img {
+	width: 100%;
+}
+
+.gallery-item a {
+	display: block;
+}
+
+.text-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+	z-index: 10;
+	left: 0;
+	top: 0;
+}
+
+.text-wrapper:hover {
+	transition: all 0.8s ease;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 1;
+}
+
+.name {
+	font-size: 1.5em;
 }
 
 .portfolio-page {
 	background-color: #f0f2f2;
-	padding: 15px 85px 155px 85px;
+	padding: 0 20px 40px 20px;
 }
 
 /* ========================================================================
@@ -317,6 +335,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	background-color: #f7f7f7;
 }
 
 .contact-header h1 {
@@ -332,7 +351,8 @@ header {
 .top-contact-container {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+	background-color: #f7f7f7;
 }
 
 .top-contact-container .contact-image {
@@ -340,7 +360,7 @@ header {
 }
 
 .top-contact-container .contact-intro-text {
-	padding-left: 30px;
+	padding: 0px 0 0 30px;
 	font-family: "DIN Next LT";
 	font-size: 20px;
 }
@@ -350,6 +370,9 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	background-color: #f7f7f7;
+	padding-top: 30px;
+	text-align: center;
 }
 
 .secondcontact-header h2 {
@@ -357,51 +380,31 @@ header {
 	font-family: "DIN Next LT";
 }
 
-body { background: #FFFFFF; }
-form { max-width:420px; margin:50px auto; }
-
-.feedback-input {
-  color: black;
-  font-family: "DIN Next LT";
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #CC6666;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
+.info-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: #f7f7f7;
 }
 
-.feedback-input:focus { border:2px solid #CC4949; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
+.info-container h2 {
+	font-family: "DIN Next LT";
+	font-size: 25px;
+	padding-bottom: 30px;
 }
 
-[type="submit"] {
-  font-family: "DIN Next LT";
-  width: 100%;
-  background: #CC6666;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
+.info-container {
+	display: block;
 }
 
-[type="submit"]:hover { background:#CC4949; }
+.contact-info h2 {
+	margin: 0;
+}
+
+
+.social-images {
+	padding-bottom: 50px;
+}
 
 /* ========================================================================
 	Universal for all pages (bottom)
@@ -444,9 +447,22 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1270px) {
+	.gallery-container {
+		grid-gap: 5px;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
 @media screen and (max-width: 1100px) {
 	.middle-aboutme .about-grid {
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	nav {
+		display: block;
 	}
 }
 
@@ -478,6 +494,38 @@ footer {
 	.middle-aboutme {
 		padding-top: 50px;
 	}
+	.contact-image img {
+		width: 400px;
+		height: auto;
+	}
+}
+
+/* This is for the portfolio gallery which has the hover function.
+Because there is no hover on a touch device, I need to move the text
+to the bottom of the image and display it by default. */
+
+@media only screen and (max-width: 1024px) {
+	.text-wrapper {
+		opacity: 1;
+		justify-content: flex-end;
+		text-shadow: 1px 1px 1px #000;
+	}
+	.project-title {
+		margin-bottom: 1em;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.contact-image img {
+		width: 250px;
+		height: auto;
+	}
+	.top-contact-container .contact-intro-text {
+		padding-left: 20px;
+	}
+	.top-contact-container .contact-image {
+		padding-right: 20px;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -487,12 +535,30 @@ footer {
 	}
 }
 
+@media screen and (max-width: 860px) {
+	.gallery-container {
+		grid-template-columns: 1fr;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	nav a {
 		display: block;
 	}
 	.cv-details {
 		width: 600px;
+	}
+	.top-contact-container .contact-image {
+		padding-left: 20px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.top-aboutme p {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 20px;
+		padding-right: 15px;
 	}
 }
 
