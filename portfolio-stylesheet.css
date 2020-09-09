@@ -159,8 +159,10 @@ header {
 
 .top-aboutme img {
 	border-radius: 50%;
-	width: 40%;
+	width: 400px;
+	height: 400px;
 	margin: 0;
+	object-fit: cover;
 }
 
 .top-aboutme {
@@ -191,7 +193,7 @@ header {
 	font-size: 50px;
 }
 
-.middle-aboutme .icons {
+.middle-aboutme .about-grid {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 30px;
@@ -205,8 +207,17 @@ header {
 	padding-right: 40px;
 }
 
-.icons p {
-	text-align: left;
+.column img {
+	display: block;
+	margin: 0 auto;
+}
+
+.column h4 {
+	text-align: center;
+} 
+
+.about-grid p {
+	text-align: center;
 }
 
 .aboutheading-three h1 {
@@ -215,9 +226,34 @@ header {
 }
 
 .cv-details {
-	width: 400px;
+	width: 800px;
 	padding-left: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
+}
+
+.cv-details h2 {
+	font-size: 30px;
+	margin: 10px 0 10px 0;
+}
+
+.cv-details h3 {
+	font-size: 25px;
+	margin: 10px 0 10px 0;
+}
+
+.cv-details h4 {
+	font-size: 20px;
+	margin: 10px 0 10px 0;
+}
+
+.cv-details h5 {
+	font-size: 17px;
+	margin: 10px 0 10px 0;
+}
+
+.cv-details p {
+	font-size: 15px;
+	margin: 10px 0 10px 0;
 }
 
 /* ========================================================================
@@ -378,6 +414,11 @@ textarea {
 	align-items: center;
 }
 
+/*.button.gihub:hover {
+	transform: scale(1.3);
+	color: #cdffd8;
+}*/
+
 .before-footer h6 {
 	font-family: "DIN Next LT";
 	font-size: 15px;
@@ -403,6 +444,12 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1100px) {
+	.middle-aboutme .about-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
 @media screen and (max-width: 1170px) {
 	.pageTitle {
 		font-size: 25px;
@@ -413,9 +460,57 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1060px) {
+	.top-aboutme {
+		height: 300px;
+	}
+	.top-aboutme img {
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+	}
+	.aboutme-heading h1 {
+		font-size: 40px;
+	}
+	.top-aboutme p {
+		font-size: 25px;
+	}
+	.middle-aboutme {
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	header {
+		background-image: none;
+		background-color: #dbdbdd;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	nav a {
 		display: block;
+	}
+	.cv-details {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.home h2 {
+		font-size: 40px;
+	}
+	.header {
+		padding: 250px 0;
+	}
+	.middle-aboutme .about-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 610px) {
+	.cv-details {
+		width: 400px;
 	}
 }
 
@@ -439,7 +534,8 @@ footer {
 	  display: block;
   }
   .before-footer {
-	  display: block;
+	  display: flex;
+	  align-items: center;
   }
   .footer {
 	  display: block;
@@ -466,7 +562,8 @@ footer {
 	  display: block;
   }
   .before-footer {
-	  display: block;
+	  display: flex;
+	  align-items: center;
   }
   .footer {
 	  display: block;
