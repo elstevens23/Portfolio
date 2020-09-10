@@ -89,46 +89,6 @@ header {
 	font-family: "DIN Next LT";
 }
 
-.about-me {
-	background-color: #cef2f2;
-	height: 450px;
-	display: flex;
-	justify-content: center;
-}
-
-.about-me h3 {
-	font-size: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: "DIN Next LT";
-}
-
-.websites {
-	background-color: #fafad4;
-	height: 450px;
-	display: flex;
-}
-
-.websites h4 {
-	font-size: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: "DIN Next LT";
-}
-
-.contact-me {
-	background-color: #f4daf5;
-	height: 450px;
-	display: flex;
-}
-
-.contact-me h5 {
-	font-size: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: "DIN Next LT";
-}
-
 .before-footer {
 	display: flex;
 	background-color: #FFFFFF;
@@ -354,6 +314,7 @@ header {
 	display: block;
 	font-size: 15px;
 	font-weight: normal;
+	margin: 0px;
 }
 
 .name {
@@ -522,8 +483,9 @@ footer {
 	}
 	
 	nav a {
-		font-size: 10px;
-		padding: 0 5px 0 5px;
+		font-size: 15px;
+		padding: 5px;
+		display: block;
 	}
 	
 	.top-aboutme {
@@ -558,13 +520,13 @@ footer {
 Because there is no hover on a touch device, I need to move the text
 to the bottom of the image and display it by default. */
 
-@media only screen and (max-width: 1024px) {
+@media (hover: none) and (pointer: coarse) {
 	.text-wrapper {
 		opacity: 1;
 		justify-content: flex-end;
 		text-shadow: 1px 1px 1px #000;
 	}
-	
+
 	.project-title {
 		margin-bottom: 1em;
 	}
@@ -647,9 +609,6 @@ to the bottom of the image and display it by default. */
     .navBar a,
     .pageTitle,
     .home h2,
-    .about-me,
-    .websites,
-    .contact-me,
     .before-footer,
     .footer {
       display: block;
@@ -660,9 +619,6 @@ to the bottom of the image and display it by default. */
   .navBar a,
   .pageTitle,
   .home h2,
-  .about-me,
-  .websites,
-  .contact-me,
   .before-footer,
   .footer {
     display: block;
