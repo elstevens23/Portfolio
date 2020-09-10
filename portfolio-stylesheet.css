@@ -165,7 +165,6 @@ header {
 }
 
 .top-aboutme {
-	/*padding: 15px;*/
 	display: flex;
 	flex-direction: row;
 	height: 400px;
@@ -231,28 +230,45 @@ header {
 }
 
 .cv-details h2 {
+	font-size: 40px;
+	margin: 10px 0 10px 0;
+	padding-bottom: 10px;
+}
+
+.cv-details h3 {
 	font-size: 30px;
 	margin: 10px 0 10px 0;
 }
 
-.cv-details h3 {
+.cv-details h4 {
 	font-size: 25px;
 	margin: 10px 0 10px 0;
 }
 
-.cv-details h4 {
+.cv-details h5 {
 	font-size: 20px;
 	margin: 10px 0 10px 0;
 }
 
-.cv-details h5 {
+.cv-details p {
 	font-size: 17px;
 	margin: 10px 0 10px 0;
 }
 
-.cv-details p {
-	font-size: 15px;
-	margin: 10px 0 10px 0;
+.cv-details .firstdetail {
+	padding-bottom: 10px;
+}
+
+.cv-details .seconddetail {
+	padding-bottom: 10px;
+}
+
+.cv-details .thirddetail {
+	padding-bottom: 10px;
+}
+
+.cv-details .fourthdetail {
+	padding-bottom: 10px;
 }
 
 /* ========================================================================
@@ -365,6 +381,7 @@ header {
 .contact-header h1 {
 	font-size: 50px;
 	font-family: "DIN Next LT";
+	padding: 10px 0 10px 0;
 }
 
 .contact-image img {
@@ -402,6 +419,7 @@ header {
 .secondcontact-header h2 {
 	font-size: 35px;
 	font-family: "DIN Next LT";
+	padding-bottom: 30px;
 }
 
 .info-container {
@@ -425,9 +443,23 @@ header {
 	margin: 0;
 }
 
-
 .social-images {
-	padding-bottom: 50px;
+	padding: 20px 0 50px 0;
+}
+
+.social-images .email-icon {
+	width: 80px;
+	height: 65px;
+}
+
+.social-images .linkedin-icon {
+	width: 95px;
+	height: 65px;
+}
+
+.social-images .twitter-icon {
+	width: 75px;
+	height: 60px;
 }
 
 /* ========================================================================
@@ -440,11 +472,6 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-
-/*.button.gihub:hover {
-	transform: scale(1.3);
-	color: #cdffd8;
-}*/
 
 .before-footer h6 {
 	font-family: "DIN Next LT";
@@ -482,42 +509,45 @@ footer {
 	.middle-aboutme .about-grid {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-}
-
-@media screen and (max-width: 1080px) {
+	
 	nav {
 		display: block;
 	}
 }
 
+
 @media screen and (max-width: 1170px) {
 	.pageTitle {
 		font-size: 25px;
 	}
+	
 	nav a {
 		font-size: 10px;
 		padding: 0 5px 0 5px;
 	}
-}
-
-@media screen and (max-width: 1060px) {
+	
 	.top-aboutme {
 		height: 300px;
 	}
+	
 	.top-aboutme img {
 		border-radius: 50%;
 		width: 200px;
 		height: 200px;
 	}
+	
 	.aboutme-heading h1 {
 		font-size: 40px;
 	}
+	
 	.top-aboutme p {
 		font-size: 25px;
 	}
+	
 	.middle-aboutme {
 		padding-top: 50px;
 	}
+	
 	.contact-image img {
 		width: 400px;
 		height: auto;
@@ -528,25 +558,28 @@ footer {
 Because there is no hover on a touch device, I need to move the text
 to the bottom of the image and display it by default. */
 
-/*@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 	.text-wrapper {
 		opacity: 1;
 		justify-content: flex-end;
 		text-shadow: 1px 1px 1px #000;
 	}
+	
 	.project-title {
 		margin-bottom: 1em;
 	}
-}*/
+}
 
 @media only screen and (max-width: 960px) {
 	.contact-image img {
 		width: 250px;
 		height: auto;
 	}
+	
 	.top-contact-container .contact-intro-text {
 		padding-left: 20px;
 	}
+	
 	.top-contact-container .contact-image {
 		padding-right: 20px;
 	}
@@ -571,9 +604,11 @@ to the bottom of the image and display it by default. */
 	nav a {
 		display: block;
 	}
+	
 	.cv-details {
 		width: 600px;
 	}
+	
 	.top-contact-container .contact-image {
 		padding-left: 20px;
 	}
@@ -592,9 +627,11 @@ to the bottom of the image and display it by default. */
 	.home h2 {
 		font-size: 40px;
 	}
+	
 	.header {
 		padding: 250px 0;
 	}
+	
 	.middle-aboutme .about-grid {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -607,57 +644,27 @@ to the bottom of the image and display it by default. */
 }
 
 @media screen and (max-width: 500px) {
-  .navBar a {
-    display: block;
-  }
-  .pageTitle {
-	  display: block;
-  }
-  .home h2 {
-	  display: block;
-  }
-  .about-me {
-	  display: block;
-  }
-  .websites {
-	  display: block;
-  }
-  .contact-me {
-	  display: block;
-  }
-  .before-footer {
-	  display: flex;
-	  align-items: center;
-  }
-  .footer {
-	  display: block;
-  }
+    .navBar a,
+    .pageTitle,
+    .home h2,
+    .about-me,
+    .websites,
+    .contact-me,
+    .before-footer,
+    .footer {
+      display: block;
+    }
 }
 
 @media screen and (max-width: 300px) {
-  .navBar a {
-    display: block;
-  }
-  .pageTitle {
-	  display: block;
-  }
-  .home h2 {
-	  display: block;
-  }
-  .about-me {
-	  display: block;
-  }
-  .websites {
-	  display: block;
-  }
-  .contact-me {
-	  display: block;
-  }
-  .before-footer {
-	  display: flex;
-	  align-items: center;
-  }
+  .navBar a,
+  .pageTitle,
+  .home h2,
+  .about-me,
+  .websites,
+  .contact-me,
+  .before-footer,
   .footer {
-	  display: block;
+    display: block;
   }
 }
