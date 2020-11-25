@@ -20,9 +20,9 @@ body {
 
 .navBar {
 	display: flex;
-	background-color: #FFFFFF;
+	background-color: #0F8B8D;
 	padding: 5px;
-	border-bottom: 1px solid #dbdbdd;
+	/*border-bottom: 1px solid #dbdbdd;*/
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
@@ -43,10 +43,11 @@ nav a {
 	font-size: 15px;
 	margin-left: 10px;
 	font-family: "DIN Next LT";
+	font-weight: bold;
 }
 
 .navBar a:hover {
-	color: #e1e1e3;
+	color: #EF233C;
 }
 
 a {
@@ -55,7 +56,7 @@ a {
 }
 
 .pageTitle {
-	font-size: 60px;
+	font-size: 40px;
 	width: 33.3%;
 	text-align: center;
 	font-family: "DIN Next LT";
@@ -74,18 +75,34 @@ a {
 */
 
 header {
-	padding: 360px 0;
+	padding: 200px 0;
 	width: 100%;
-	background-image: url('header.jpg');
+	background-color: #0F8B8D;
 	background-size: cover;
 	background-position: top;
 	padding-left: 15px;
 	padding-right: 15px;
+	text-align: center;
+}
+
+.headerHighlight {
+	color: #EF233C;
+	display: inline;
+}
+
+.headerColorPop {
+	color: #EF233C;
+	display: inline;
 }
 
 .home h2 {
-	padding: 40px;
-	font-size: 60px;
+	font-size: 100px;
+	font-family: "DIN Next LT";
+}
+
+.home h3 {
+	padding: 20px;
+	font-size: 75px;
 	font-family: "DIN Next LT";
 }
 
@@ -104,7 +121,7 @@ header {
 
 .aboutmepage {
 	font-family: "DIN Next LT";
-	background-color: #f0f2f2;
+	background-color: #0F8B8D;
 }
 
 .aboutme-header {
@@ -153,12 +170,12 @@ header {
 
 .middle-aboutme .about-grid {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 30px;
+	grid-template-columns: repeat(3, 2fr);
+	grid-gap: 50px;
 	grid-auto-flow: row;
 	justify-items: center;
 	border: transparent;
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
 	font-size: 25px;
 	padding-left: 40px;
