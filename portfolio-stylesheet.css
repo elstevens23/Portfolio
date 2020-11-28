@@ -21,25 +21,25 @@ body {
 .navBar {
 	display: flex;
 	background-color: #0F8B8D;
-	padding: 5px;
-	/*border-bottom: 1px solid #dbdbdd;*/
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
 	overflow: hidden;
-	position: sticky;
+	/*position: sticky;*/
 	top: 0;
 	width: 100%;
 }
 
 nav {
 	width: 33.3%;
+	margin-top: 20px; /* can't give the navbar padding on the top - it won't apply but it does in the dev tools */
 }
 
 nav a {
 	color: #000000;
 	text-decoration: none;
-	padding: 0 10px 0 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 15px;
 	margin-left: 10px;
 	font-family: "DIN Next LT";
@@ -63,6 +63,11 @@ a {
 	margin: 0;
 	text-decoration: none;
 	color: #000000;
+}
+
+.initial-color {
+	color: #EF233C;
+	display: inline;
 }
 
 .right {
@@ -106,6 +111,45 @@ header {
 	font-family: "DIN Next LT";
 }
 
+.output {
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
+	color: #000000;
+}
+
+.output h1 {
+	font-size: 30px;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+	content: '';
+	display: inline-block;
+	margin-left: 3px;
+	background-color: white;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+h1.cursor::after {
+	height: 24px;
+	width: 13px;
+}
+
+p.cursor::after {
+	height: 13px;
+	width: 6px;
+}
+
+@keyframes blink {
+	0% {opacity: 1;}
+	49% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
 .before-footer {
 	display: flex;
 	background-color: #FFFFFF;
@@ -136,9 +180,16 @@ header {
 
 .top-aboutme img {
 	border-radius: 50%;
-	max-width: 400px;
+	max-height: 300px;
 	margin: 0;
 	object-fit: cover;
+	border: 5px solid #EF233C;
+}
+
+.summary-about {
+	width: 100%;
+	/*background-color: ; choose a background colour for this? */
+	height: 500px;
 }
 
 .top-aboutme {
@@ -147,7 +198,7 @@ header {
 	height: 400px;
 	max-width: 1000px;
 	margin: auto;
-	padding-top: 50px;
+	padding-top: 80px;
 }
 
 .top-aboutme p {
@@ -159,7 +210,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	padding-top: 100px;
 	align-items: center;
 	width: 100%;
 }
@@ -189,6 +239,7 @@ header {
 
 .column h4 {
 	text-align: center;
+	color: #EF233C;
 } 
 
 .about-grid p {
@@ -200,53 +251,53 @@ header {
 	padding-left: 50px;
 }
 
-.cv-details {
-	width: 800px;
-	padding-left: 50px;
-	padding-bottom: 20px;
-}
+/*.cv-details {*/
+/*	width: 800px;*/
+/*	padding-left: 50px;*/
+/*	padding-bottom: 20px;*/
+/*}*/
 
-.cv-details h2 {
-	font-size: 40px;
-	margin: 10px 0 10px 0;
-	padding-bottom: 10px;
-}
+/*.cv-details h2 {*/
+/*	font-size: 40px;*/
+/*	margin: 10px 0 10px 0;*/
+/*	padding-bottom: 10px;*/
+/*}*/
 
-.cv-details h3 {
-	font-size: 30px;
-	margin: 10px 0 10px 0;
-}
+/*.cv-details h3 {*/
+/*	font-size: 30px;*/
+/*	margin: 10px 0 10px 0;*/
+/*}*/
 
-.cv-details h4 {
-	font-size: 25px;
-	margin: 10px 0 10px 0;
-}
+/*.cv-details h4 {*/
+/*	font-size: 25px;*/
+/*	margin: 10px 0 10px 0;*/
+/*}*/
 
-.cv-details h5 {
-	font-size: 20px;
-	margin: 10px 0 10px 0;
-}
+/*.cv-details h5 {*/
+/*	font-size: 20px;*/
+/*	margin: 10px 0 10px 0;*/
+/*}*/
 
-.cv-details p {
-	font-size: 17px;
-	margin: 10px 0 10px 0;
-}
+/*.cv-details p {*/
+/*	font-size: 17px;*/
+/*	margin: 10px 0 10px 0;*/
+/*}*/
 
-.cv-details .firstdetail {
-	padding-bottom: 10px;
-}
+/*.cv-details .firstdetail {*/
+/*	padding-bottom: 10px;*/
+/*}*/
 
-.cv-details .seconddetail {
-	padding-bottom: 10px;
-}
+/*.cv-details .seconddetail {*/
+/*	padding-bottom: 10px;*/
+/*}*/
 
-.cv-details .thirddetail {
-	padding-bottom: 10px;
-}
+/*.cv-details .thirddetail {*/
+/*	padding-bottom: 10px;*/
+/*}*/
 
-.cv-details .fourthdetail {
-	padding-bottom: 10px;
-}
+/*.cv-details .fourthdetail {*/
+/*	padding-bottom: 10px;*/
+/*}*/
 
 /* ========================================================================
 	'Portfolio' page
@@ -339,7 +390,7 @@ header {
 }
 
 .portfolio-page {
-	background-color: #f0f2f2;
+	background-color: #0F8B8D;
 	padding: 0 20px 40px 20px;
 }
 
@@ -348,12 +399,15 @@ header {
    ========================================================================
 */
 
+.contact-me-page {
+	background-color: #0F8B8D;
+}
+
 .contact-header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #f7f7f7;
 }
 
 .contact-header h1 {
@@ -365,13 +419,13 @@ header {
 .contact-image img {
 	width: auto;
 	height: 300px;
+	border: 5px solid #EF233C;
 }
 
 .top-contact-container {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	background-color: #f7f7f7;
 }
 
 .top-contact-container .contact-image {
@@ -389,7 +443,6 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #f7f7f7;
 	padding-top: 30px;
 	text-align: center;
 }
@@ -404,7 +457,6 @@ header {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	background-color: #f7f7f7;
 }
 
 .info-container h2 {
