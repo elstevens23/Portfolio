@@ -1,0 +1,697 @@
+/* ========================================================================
+	Universal for all pages
+   ========================================================================
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 62.5%; /*This creates this conversion (1em = 10px)*/
+}	
+
+@font-face {
+	font-family: "DIN Next LT";
+	src: url(DINNextLTPro-Regular.ttf);
+}
+
+.navBar {
+	display: flex;
+	background-color: #0F8B8D;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	overflow: hidden;
+	/*position: sticky;*/
+	top: 0;
+	width: 100%;
+}
+
+nav {
+	width: 33.3%;
+	margin-top: 20px; /* can't give the navbar padding on the top - it won't apply but it does in the dev tools */
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 15px;
+	margin-left: 10px;
+	font-family: "DIN Next LT";
+	font-weight: bold;
+}
+
+.navBar a:hover {
+	color: #EF233C;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.pageTitle {
+	font-size: 40px;
+	width: 33.3%;
+	text-align: center;
+	font-family: "DIN Next LT";
+	margin: 0;
+	text-decoration: none;
+	color: #000000;
+}
+
+.initial-color {
+	color: #EF233C;
+	display: inline;
+}
+
+.right {
+	width: 33.3%;
+}
+
+/* ========================================================================
+	Home Page
+   ========================================================================
+*/
+
+header {
+	padding: 200px 0;
+	width: 100%;
+	background-color: #0F8B8D;
+	background-size: cover;
+	background-position: top;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+.headerHighlight {
+	color: #EF233C;
+	display: inline;
+}
+
+.headerColorPop {
+	color: #EF233C;
+	display: inline;
+}
+
+.home h2 {
+	font-size: 100px;
+	font-family: "DIN Next LT";
+}
+
+.home h3 {
+	padding: 20px;
+	font-size: 75px;
+	font-family: "DIN Next LT";
+}
+
+.output {
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
+	color: #000000;
+}
+
+.output h1 {
+	font-size: 30px;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+	content: '';
+	display: inline-block;
+	margin-left: 3px;
+	background-color: white;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+h1.cursor::after {
+	height: 24px;
+	width: 13px;
+}
+
+p.cursor::after {
+	height: 13px;
+	width: 6px;
+}
+
+@keyframes blink {
+	0% {opacity: 1;}
+	49% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+.before-footer {
+	display: flex;
+	background-color: #FFFFFF;
+	height: 170px;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ========================================================================
+	'About Me' Page
+   ========================================================================
+*/
+
+.aboutmepage {
+	font-family: "DIN Next LT";
+	background-color: #0F8B8D;
+}
+
+.aboutme-header {
+	display: flex;
+	justify-content: center;
+}
+
+.aboutme-heading h1 {
+	font-size: 50px;
+	padding-left: 45px;
+}
+
+.top-aboutme img {
+	border-radius: 50%;
+	max-height: 300px;
+	margin: 0;
+	object-fit: cover;
+	border: 5px solid #EF233C;
+}
+
+.summary-about {
+	width: 100%;
+	/*background-color: ; choose a background colour for this? */
+	height: 500px;
+}
+
+.top-aboutme {
+	display: flex;
+	flex-direction: row;
+	height: 400px;
+	max-width: 1000px;
+	margin: auto;
+	padding-top: 80px;
+}
+
+.top-aboutme p {
+	font-size: 25px;
+	padding-left: 45px;
+}
+
+.middle-aboutme {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	align-items: center;
+	width: 100%;
+}
+
+.aboutheading-two h1 {
+	font-size: 50px;
+}
+
+.middle-aboutme .about-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	grid-gap: 50px;
+	grid-auto-flow: row;
+	justify-items: center;
+	border: transparent;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 25px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.column img {
+	display: block;
+	margin: 0 auto;
+}
+
+.column h4 {
+	text-align: center;
+	color: #EF233C;
+} 
+
+.about-grid p {
+	text-align: center;
+}
+
+.aboutheading-three h1 {
+	font-size: 50px;
+	padding-left: 50px;
+}
+
+/*.cv-details {*/
+/*	width: 800px;*/
+/*	padding-left: 50px;*/
+/*	padding-bottom: 20px;*/
+/*}*/
+
+/*.cv-details h2 {*/
+/*	font-size: 40px;*/
+/*	margin: 10px 0 10px 0;*/
+/*	padding-bottom: 10px;*/
+/*}*/
+
+/*.cv-details h3 {*/
+/*	font-size: 30px;*/
+/*	margin: 10px 0 10px 0;*/
+/*}*/
+
+/*.cv-details h4 {*/
+/*	font-size: 25px;*/
+/*	margin: 10px 0 10px 0;*/
+/*}*/
+
+/*.cv-details h5 {*/
+/*	font-size: 20px;*/
+/*	margin: 10px 0 10px 0;*/
+/*}*/
+
+/*.cv-details p {*/
+/*	font-size: 17px;*/
+/*	margin: 10px 0 10px 0;*/
+/*}*/
+
+/*.cv-details .firstdetail {*/
+/*	padding-bottom: 10px;*/
+/*}*/
+
+/*.cv-details .seconddetail {*/
+/*	padding-bottom: 10px;*/
+/*}*/
+
+/*.cv-details .thirddetail {*/
+/*	padding-bottom: 10px;*/
+/*}*/
+
+/*.cv-details .fourthdetail {*/
+/*	padding-bottom: 10px;*/
+/*}*/
+
+/* ========================================================================
+	'Portfolio' page
+   ========================================================================
+*/
+
+.projects-header {
+	font-family: "DIN Next LT";
+	display: flex;
+	justify-content: center;
+}
+
+.projects-header h1 {
+	font-size: 50px;
+}
+
+.gallery-container {
+	font-family: "DIN Next LT";
+	max-width: 1920px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	grid-auto-flow: row;
+	justify-items: center;
+}
+
+.gallery-item {
+	margin: 10px;
+	text-decoration: none;
+	position: relative;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: auto;
+}
+
+.gallery-item a {
+	display: block;
+}
+
+.text-wrapper {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	padding-top: 20%;
+}
+
+.text-wrapper:hover {
+	transition: all 0.8s ease;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 1;
+	display: block;
+}
+
+.text-wrapper:hover h4 {
+	text-align: center;
+	display: block;
+	font-size: 20px;
+}
+
+.text-wrapper:hover h5 {
+	text-align: center;
+	display: block;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.name {
+	font-size: 1.5em;
+}
+
+.portfolio-page {
+	background-color: #0F8B8D;
+	padding: 0 20px 40px 20px;
+}
+
+/* ========================================================================
+	Contact Page
+   ========================================================================
+*/
+
+.contact-me-page {
+	background-color: #0F8B8D;
+}
+
+.contact-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact-header h1 {
+	font-size: 50px;
+	font-family: "DIN Next LT";
+	padding: 10px 0 10px 0;
+}
+
+.contact-image img {
+	width: auto;
+	height: 300px;
+	border: 5px solid #EF233C;
+}
+
+.top-contact-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.top-contact-container .contact-image {
+	padding-right: 30px;
+}
+
+.top-contact-container .contact-intro-text {
+	padding: 0px 0 0 30px;
+	font-family: "DIN Next LT";
+	font-size: 20px;
+}
+
+.secondcontact-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.secondcontact-header h2 {
+	font-size: 35px;
+	font-family: "DIN Next LT";
+	padding-bottom: 30px;
+}
+
+.info-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.info-container h2 {
+	font-family: "DIN Next LT";
+	font-size: 25px;
+	padding-bottom: 30px;
+}
+
+.info-container {
+	display: block;
+}
+
+.contact-info h2 {
+	margin: 0;
+}
+
+.social-images {
+	padding: 20px 0 50px 0;
+}
+
+.social-images .email-icon {
+	width: 80px;
+	height: 65px;
+}
+
+.social-images .linkedin-icon {
+	width: 95px;
+	height: 65px;
+}
+
+.social-images .twitter-icon {
+	width: 75px;
+	height: 60px;
+}
+
+/* ========================================================================
+	Universal for all pages (bottom)
+   ========================================================================
+*/
+
+.before-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.before-footer h6 {
+	font-family: "DIN Next LT";
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+
+footer {
+	background-color: #e1e1e3;
+	font-family: "DIN Next LT";
+	text-align: center;
+	padding: 15px 0 15px 0;
+}
+
+/* =============================================
+	Media Queries
+   =============================================
+*/
+
+@media screen and (max-width: 1350px) {
+	.pageTitle {
+		font-size: 45px;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.gallery-container {
+		grid-gap: 5px;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.middle-aboutme .about-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	nav {
+		display: block;
+	}
+}
+
+
+@media screen and (max-width: 1170px) {
+	.pageTitle {
+		font-size: 25px;
+	}
+	
+	nav a {
+		font-size: 15px;
+		padding: 5px;
+		display: block;
+	}
+	
+	.top-aboutme {
+		height: 300px;
+	}
+	
+	.top-aboutme img {
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+	}
+	
+	.aboutme-heading h1 {
+		font-size: 40px;
+	}
+	
+	.top-aboutme p {
+		font-size: 25px;
+	}
+	
+	.middle-aboutme {
+		padding-top: 50px;
+	}
+	
+	.contact-image img {
+		width: 400px;
+		height: auto;
+	}
+}
+
+/* This is for the portfolio gallery which has the hover function.
+Because there is no hover on a touch device, I need to move the text
+to the bottom of the image and display it by default. */
+
+@media (hover: none) and (pointer: coarse) {
+	.text-wrapper {
+		opacity: 1;
+		justify-content: flex-end;
+		text-shadow: 1px 1px 1px #000;
+		display: block;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.project-title {
+		margin-bottom: 1em;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.contact-image img {
+		width: 250px;
+		height: auto;
+	}
+	
+	.top-contact-container .contact-intro-text {
+		padding-left: 20px;
+	}
+	
+	.top-contact-container .contact-image {
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	header {
+		background-image: none;
+		background-color: #dbdbdd;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.gallery-container {
+		grid-template-columns: 1fr;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	nav a {
+		display: block;
+	}
+	
+	.cv-details {
+		width: 600px;
+	}
+	
+	.top-contact-container .contact-image {
+		padding-left: 20px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.top-aboutme p {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 20px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.home h2 {
+		font-size: 40px;
+	}
+	
+	.header {
+		padding: 250px 0;
+	}
+	
+	.middle-aboutme .about-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 610px) {
+	.cv-details {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+    .navBar a,
+    .pageTitle,
+    .home h2,
+    .before-footer,
+    .footer {
+      display: block;
+    }
+}
+
+@media screen and (max-width: 300px) {
+  .navBar a,
+  .pageTitle,
+  .home h2,
+  .before-footer,
+  .footer {
+    display: block;
+  }
+}
