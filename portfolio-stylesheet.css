@@ -461,7 +461,7 @@ p.cursor::after {
 
 .info-container h2 {
 	font-family: "DIN Next LT";
-	font-size: 25px;
+	font-size: 2rem;
 	padding-bottom: 30px;
 }
 
@@ -473,23 +473,63 @@ p.cursor::after {
 	margin: 0;
 }
 
+form {
+	width: 500px;
+	border: 5px solid #EF233C;
+}
+
+.form {
+	padding: 20px 0 20px 0;
+	text-align: center;
+}
+
+.email-form {
+	font-family: "DIN Next LT";
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-section {
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+label {
+	display: block;
+}
+
+.social-contact-info h2 {
+	font-family: "DIN Next LT";
+	font-size: 2rem;
+	padding-top: 50px;
+	margin: 0;
+}
+
 .social-images {
-	padding: 20px 0 50px 0;
+	padding-bottom: 50px;
 }
 
 .social-images .email-icon {
-	width: 80px;
-	height: 65px;
+	max-height: 40px;
+	padding: 0 10px 0 10px;
 }
 
 .social-images .linkedin-icon {
-	width: 95px;
-	height: 65px;
+	max-height: 40px;
+	padding: 0 10px 0 10px;
 }
 
 .social-images .twitter-icon {
-	width: 75px;
-	height: 60px;
+	max-height: 40px;
+	padding: 0 10px 0 10px;
+}
+
+.social-images .github-icon {
+	max-height: 40px;
+	padding: 0 10px 0 10px;
 }
 
 /* ========================================================================
