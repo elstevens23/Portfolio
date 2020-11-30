@@ -14,6 +14,7 @@
 <div class="contact-me-page">
 
 	<section class="navBar">
+
 		<nav>
 			<a href="index.html">HOME</a>
 			<a href="about-me.html">ABOUT ME</a>
@@ -24,7 +25,19 @@
 		<h1 class="pageTitle"> <a href="index.html"><div class="initial-color">E</div>leanor
 			<div class="initial-color">S</div>tevens</a>
 		</h1>
+
 		<div class="right">
+			<div class="nav-social-images">
+				<a href="https://www.linkedin.com/in/eleanor--stevens/">
+					<img class="linkedin-icon" src="linked-in.png" alt="Black Linked In Logo">
+				</a>
+				<a href="https://twitter.com/el_stevensx">
+					<img class="twitter-icon" src="twitter.png" alt="Black Twitter Logo">
+				</a>
+				<a href=https://github.com/elstevens23>
+					<img class="github-icon" src="github.png" alt="Black GitHub Logo">
+				</a>
+			</div>
 		</div>
 
 	</section>
@@ -57,25 +70,26 @@
 
 	</div>
 
-		<form class="email-form">
+		<form class="email-form" action="form-to-email.php" method="POST" novalidate="novalidate">
 			<div class="form">
 				<div class="form-section groupFormName">
 					<label>Name: </label>
-					<input type="text" name="name" class="form-section" placeholder="Enter Name">
+					<input type="text" name="name" class="form-section" placeholder="Enter Name" autocomplete="off">
 				</div>
 				<br>
 				<div class="form-section groupFormEmail">
 					<label>Email: </label>
-					<input type="email" name="email" class="form-section" placeholder="Enter Email">
+					<input type="email" name="email" class="form-section" placeholder="Enter Email" autocomplete="off">
 				</div>
 				<br>
 				<div class="form-section groupFormMessage">
 					<label>Message: </label>
-					<textarea rows="3" name="message" class="form-section" placeholder="Type Your Message"></textarea>
+					<textarea rows="3" name="message" class="form-section" placeholder="Type Your Message" autocomplete="off"></textarea>
 				</div>
 				<br>
 				<div class="form-section group">
 					<button class="form-section">Submit</button>
+					<button type="reset" value="Clear" class="form-section">Clear</button>
 				</div>
 			</div>
 		</form>
@@ -87,7 +101,7 @@
 		</div>
 
 		<div class="social-images">
-			<a href="https://www.linkedin.com/in/eleanor-stevens-ba2a441b5/">
+			<a href="https://www.linkedin.com/in/eleanor--stevens/">
 				<img class="linkedin-icon" src="linked-in.png" alt="Black Linked In Logo">
 			</a>
 			<a href="https://twitter.com/el_stevensx">
