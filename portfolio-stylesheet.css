@@ -97,6 +97,11 @@ a {
 
 .nav-social-images .github-icon {
 	max-height: 20px;
+	padding: 0 10px 0 10px;
+}
+
+.nav-social-images .devto-icon {
+	max-height: 20px;
 	padding: 0 30px 0 10px;
 }
 
@@ -270,8 +275,8 @@ header {
 }
 
 .gallery-item img {
-	width: 100%;
-	height: auto;
+	width: 400px;
+	height: 300px;
 }
 
 .gallery-item a {
@@ -282,7 +287,7 @@ header {
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 300px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -307,6 +312,7 @@ header {
 	background: rgba(0, 0, 0, 0.6);
 	opacity: 1;
 	display: block;
+	height: 300px;
 }
 
 .text-wrapper:hover h4 {
@@ -370,10 +376,10 @@ header {
 	padding-right: 30px;
 }
 
-.top-contact-container .contact-intro-text {
-	padding: 0px 0 0 30px;
+.contact-intro-text {
+	padding: 40px 0 0 0;
 	font-family: "DIN Next LT";
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .secondcontact-header {
@@ -481,6 +487,11 @@ button {
 }
 
 .social-images .github-icon {
+	max-height: 40px;
+	padding: 0 10px 0 10px;
+}
+
+.social-images .devto-icon {
 	max-height: 40px;
 	padding: 0 10px 0 10px;
 }
