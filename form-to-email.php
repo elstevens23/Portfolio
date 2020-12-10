@@ -24,7 +24,7 @@ $email_from = 'noreply@io-academy.uk';
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from: $name.\n".
     "Their email is: " . $visitor_email . "\n" .
-"Here is the message:\n $message";
+"Here is the message:\n\n $message";
 
 $to = "eleanorkwstevens@gmail.com";
 $headers = "From: $email_from \r\n";
@@ -34,7 +34,7 @@ $headers .= "Reply-To: $visitor_email \r\n";
 mail($to,$email_subject,$email_body,$headers);
 
 //done - redirect to thank-you page.
-header('Location: index.html');
+header('Location: contact.html');
 
 // Function to validate against any email injection attempts
 function IsInjected($str) {
