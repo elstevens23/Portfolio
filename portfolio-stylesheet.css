@@ -701,6 +701,10 @@ to the bottom of the image and display it by default. */
 	.top-contact-container .contact-image {
 		padding-left: 20px;
 	}
+
+	.contact-intro-text {
+		padding: 10px 10px 0 0;
+	}
 }
 
 @media screen and (max-width: 780px) {
