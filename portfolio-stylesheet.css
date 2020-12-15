@@ -78,6 +78,7 @@ a {
 .nav-social-images {
 	display: flex;
 	justify-content: end;
+	padding-left: 320px;
 }
 
 .nav-social-images .email-icon {
@@ -102,7 +103,7 @@ a {
 
 .nav-social-images .devto-icon {
 	max-height: 20px;
-	padding: 0 30px 0 10px;
+	padding: 0 30px 0 0;
 }
 
 /* ========================================================================
@@ -168,9 +169,13 @@ header {
 	padding-left: 45px;
 }
 
+.top-aboutme {
+	padding: 10px;
+}
+
 .top-aboutme img {
 	border-radius: 50%;
-	max-height: 500px;
+	height: 400px;
 	margin: 0;
 	object-fit: cover;
 	border: 5px solid #EF233C;
@@ -178,7 +183,6 @@ header {
 
 .summary-about {
 	width: 100%;
-	/*background-color: ; choose a background colour for this? */
 	height: 500px;
 }
 
@@ -472,27 +476,27 @@ button {
 }
 
 .social-images .email-icon {
-	max-height: 40px;
+	height: 40px;
 	padding: 0 10px 0 10px;
 }
 
 .social-images .linkedin-icon {
-	max-height: 40px;
+	height: 40px;
 	padding: 0 10px 0 10px;
 }
 
 .social-images .twitter-icon {
-	max-height: 40px;
+	height: 40px;
 	padding: 0 10px 0 10px;
 }
 
 .social-images .github-icon {
-	max-height: 40px;
+	height: 40px;
 	padding: 0 10px 0 10px;
 }
 
 .social-images .devto-icon {
-	max-height: 40px;
+	height: 40px;
 	padding: 0 10px 0 10px;
 }
 
