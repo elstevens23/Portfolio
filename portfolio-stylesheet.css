@@ -364,6 +364,10 @@ header {
 	padding: 10px 0 10px 0;
 }
 
+.contact-image {
+	padding-left: 10px;
+}
+
 .contact-image img {
 	width: auto;
 	height: 400px;
@@ -611,6 +615,51 @@ to the bottom of the image and display it by default. */
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	.nav-social-images {
+		padding-left: 220px;
+	}
+
+	.top-aboutme img {
+		border-radius: 50%;
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 1160px) {
+	.nav-social-images {
+		padding-left: 220px;
+	}
+	.summary-about {
+		height: 400px;
+	}
+	.top-aboutme img {
+		border-radius: 50%;
+		height: 250px;
+	}
+}
+
+
+@media only screen and (max-width: 1080px) {
+	.nav-social-images {
+		padding-left: 150px;
+	}
+
+	.top-aboutme img {
+		display: none;
+	}
+
+	.summary-about {
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.nav-social-images {
+		padding-left: 150px;
+	}
+}
+
 @media only screen and (max-width: 960px) {
 	.contact-image img {
 		width: 250px;
@@ -627,9 +676,8 @@ to the bottom of the image and display it by default. */
 }
 
 @media screen and (max-width: 900px) {
-	header {
-		background-image: none;
-		background-color: #dbdbdd;
+	.nav-social-images {
+		padding-left: 100px;
 	}
 }
 
@@ -662,10 +710,17 @@ to the bottom of the image and display it by default. */
 		font-size: 20px;
 		padding-right: 15px;
 	}
+	.nav-social-images {
+		padding-left: 70px;
+	}
 }
 
 @media screen and (max-width: 670px) {
 	.home h2 {
+		font-size: 40px;
+	}
+
+	.home h3 {
 		font-size: 40px;
 	}
 	
@@ -676,11 +731,15 @@ to the bottom of the image and display it by default. */
 	.middle-aboutme .about-grid {
 		grid-template-columns: 1fr 1fr;
 	}
+
+	.nav-social-images {
+		padding-left: 50px;
+	}
 }
 
-@media screen and (max-width: 610px) {
-	.cv-details {
-		width: 400px;
+@media screen and (max-width: 620px) {
+	.nav-social-images {
+		padding-left: 30px;
 	}
 }
 
@@ -692,6 +751,12 @@ to the bottom of the image and display it by default. */
     .footer {
       display: block;
     }
+	.middle-aboutme .about-grid {
+		display: block;
+	}
+	.nav-social-images {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 300px) {
