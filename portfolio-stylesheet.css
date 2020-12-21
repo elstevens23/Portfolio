@@ -78,7 +78,7 @@ a {
 .nav-social-images {
 	display: flex;
 	justify-content: end;
-	padding-left: 320px;
+	padding-left: 460px;
 }
 
 .nav-social-images .email-icon {
@@ -103,7 +103,7 @@ a {
 
 .nav-social-images .devto-icon {
 	max-height: 20px;
-	padding: 0 30px 0 0;
+	padding: 0 30px 0 3px;
 }
 
 /* ========================================================================
@@ -539,16 +539,38 @@ footer {
    =============================================
 */
 
+@media screen and (max-width: 1780px) {
+	.nav-social-images {
+		padding-left: 360px;
+	}
+}
+
+@media screen and (max-width: 1570px) {
+	.nav-social-images {
+		padding-left: 300px;
+	}
+}
+
+@media screen and (max-width: 1390px) {
+	.nav-social-images {
+		padding-left: 260px;
+	}
+}
+
 @media screen and (max-width: 1350px) {
 	.pageTitle {
 		font-size: 45px;
 	}
-}
 
-@media screen and (max-width: 1270px) {
 	.gallery-container {
 		grid-gap: 5px;
 		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1290px) {
+	.nav-social-images {
+		padding-left: 200px;
 	}
 }
 
@@ -626,10 +648,6 @@ Because there is no hover on a touch device, I need it to display by default. */
 }
 
 @media screen and (max-width: 1200px) {
-	.nav-social-images {
-		padding-left: 220px;
-	}
-
 	.top-aboutme img {
 		border-radius: 50%;
 		height: 300px;
@@ -645,7 +663,7 @@ Because there is no hover on a touch device, I need it to display by default. */
 
 @media screen and (max-width: 1160px) {
 	.nav-social-images {
-		padding-left: 220px;
+		padding-left: 160px;
 	}
 
 	.summary-about {
@@ -767,6 +785,10 @@ Because there is no hover on a touch device, I need it to display by default. */
 	form {
 		width: 350px;
 	}
+
+	.nav-social-images {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -780,10 +802,6 @@ Because there is no hover on a touch device, I need it to display by default. */
 
 	.middle-aboutme .about-grid {
 		display: block;
-	}
-
-	.nav-social-images {
-		display: none;
 	}
 }
 
