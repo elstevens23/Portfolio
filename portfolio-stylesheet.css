@@ -272,6 +272,10 @@ header {
 	justify-items: center;
 }
 
+.small-screen-label {
+	display: none;
+}
+
 .gallery-item {
 	margin: 10px;
 	text-decoration: none;
@@ -385,9 +389,10 @@ header {
 }
 
 .contact-intro-text {
-	padding: 40px 0 0 0;
+	padding: 40px 20px 0 0;
 	font-family: "DIN Next LT";
 	font-size: 1.25rem;
+	width: 500px;
 }
 
 .secondcontact-header {
@@ -402,7 +407,7 @@ header {
 .secondcontact-header h2 {
 	font-size: 35px;
 	font-family: "DIN Next LT";
-	padding-bottom: 30px;
+	padding: 0 20px 30px 20px;
 }
 
 .info-container {
@@ -471,8 +476,8 @@ button {
 .social-contact-info h2 {
 	font-family: "DIN Next LT";
 	font-size: 2rem;
-	padding-top: 50px;
 	margin: 0;
+	padding: 50px 20px 10px 20px;
 }
 
 .social-images {
@@ -590,16 +595,21 @@ footer {
 	.middle-aboutme {
 		padding-top: 50px;
 	}
+
+	.top-contact-container {
+		display: block;
+		text-align: center;
+	}
 	
 	.contact-image img {
 		width: 400px;
 		height: auto;
+		text-align: center;
 	}
 }
 
 /* This is for the portfolio gallery which has the hover function.
-Because there is no hover on a touch device, I need to move the text
-to the bottom of the image and display it by default. */
+Because there is no hover on a touch device, I need it to display by default. */
 
 @media (hover: none) and (pointer: coarse) {
 	.text-wrapper {
@@ -615,7 +625,7 @@ to the bottom of the image and display it by default. */
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 	.nav-social-images {
 		padding-left: 220px;
 	}
@@ -626,13 +636,22 @@ to the bottom of the image and display it by default. */
 	}
 }
 
-@media only screen and (max-width: 1160px) {
+@media screen and (max-width: 1170px) {
+	.contact-intro-text {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 1160px) {
 	.nav-social-images {
 		padding-left: 220px;
 	}
+
 	.summary-about {
 		height: 400px;
 	}
+
 	.top-aboutme img {
 		border-radius: 50%;
 		height: 250px;
@@ -640,7 +659,7 @@ to the bottom of the image and display it by default. */
 }
 
 
-@media only screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
 	.nav-social-images {
 		padding-left: 150px;
 	}
@@ -654,24 +673,16 @@ to the bottom of the image and display it by default. */
 	}
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	.nav-social-images {
 		padding-left: 150px;
 	}
 }
 
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
 	.contact-image img {
 		width: 250px;
 		height: auto;
-	}
-	
-	.top-contact-container .contact-intro-text {
-		padding-left: 20px;
-	}
-	
-	.top-contact-container .contact-image {
-		padding-right: 20px;
 	}
 }
 
@@ -681,7 +692,7 @@ to the bottom of the image and display it by default. */
 	}
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 880px) {
 	.gallery-container {
 		grid-template-columns: 1fr;
 		justify-content: center;
@@ -710,8 +721,17 @@ to the bottom of the image and display it by default. */
 		font-size: 20px;
 		padding-right: 15px;
 	}
+
 	.nav-social-images {
 		padding-left: 70px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.top-contact-container .contact-intro-text {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -743,6 +763,12 @@ to the bottom of the image and display it by default. */
 	}
 }
 
+@media screen and (max-width: 560px) {
+	form {
+		width: 350px;
+	}
+}
+
 @media screen and (max-width: 500px) {
     .navBar a,
     .pageTitle,
@@ -751,11 +777,49 @@ to the bottom of the image and display it by default. */
     .footer {
       display: block;
     }
+
 	.middle-aboutme .about-grid {
 		display: block;
 	}
+
 	.nav-social-images {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.gallery-item img {
+		max-width: 300px;
+		height: auto;
+	}
+
+	.text-wrapper {
+		display: none;
+	}
+
+	.small-screen-label {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	form {
+		width: 250px;
+	}
+
+	input {
+		width: 200px;
+	}
+
+	textarea {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.gallery-item img {
+		max-width: 200px;
+		height: auto;
 	}
 }
 
